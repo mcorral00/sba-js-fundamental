@@ -82,6 +82,7 @@ const CourseInfo = {
 
 
 // total points for each assignment
+
 const assignmentsArray = AssignmentGroup.assignments; // create assignmentsArray (AssignmentGroup.assignment)
 const assignmentPoints = {};  // create empty object called assignment points.
 
@@ -96,6 +97,7 @@ console.log(assignmentPoints)
 
 
 // Group submissions by learner ID
+
 let submissionByLearner = {}; // make empty object 
 
 for (let i = 0; i < LearnerSubmissions.length; i++) { // loop through learner submissions
@@ -112,6 +114,13 @@ for (let i = 0; i < LearnerSubmissions.length; i++) { // loop through learner su
         avg: 0,
       };
       const learnerSubmissions = submissionByLearner[learnerId];
+
+              // Calculating scores for each assignment
+
+              learnerSubmissions.forEach(submission => {
+                const assignmentId = submission.assignment_id;
+                const score = (submission.submission.score / assignmentPoints[assignmentId]) * 100;
+                learnerData[assignmentId] = score;
   }}
 
 
