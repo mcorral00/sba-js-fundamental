@@ -122,8 +122,8 @@ for (let i = 0; i < LearnerSubmissions.length; i++) { // loop through learner su
     console.log(score)
   });
 
-  // calculate average score for learner
-  
+    // need to calculate average score for learner
+    //learnerData.avg = totalPoints === 0 ? (totalScore / totalPoints) * 100 : 0;
 
 }
 //     const result = [
