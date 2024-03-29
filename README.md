@@ -1,1 +1,1 @@
-This repository includes a HTML and Javascript file with code that iterates through a given data collection and attempts to return an array of objects that contains an ID number, average number, and an assignment ID nunmber in a dynamic fasion. 
+This repository includes an HTML and Javascript file with code that iterates through a given data collection and attempts to return an array of objects that contains an ID number, an average number, and an assignment ID number in a dynamic fashion. 
